@@ -64,7 +64,7 @@ Then run:
 
 ```
 [12:34:56] === Whive GPU Miner ===
-[12:34:56] Pool: 206.189.2.17:3333 Wallet: WRKn5ox9.../WORKER
+[12:34:56] Pool: your.pool.com:3333 Wallet: YOUR_WALLET.../WORKER
 [12:34:56] GPU: AMD Radeon RX 580 Series
 [12:34:56] Kernel built
 [12:34:56] Connected
