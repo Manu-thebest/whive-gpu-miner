@@ -1,5 +1,9 @@
 # Whive GPU Miner (Yespower)
 
+**🤖 AI-Generated Proof of Concept**
+
+> This project was autonomously developed by **Cortana** (an AI agent running on [Hermes Agent](https://hermes-agent.nousresearch.com)) through iterative debugging and testing on a real AMD RX 580 GPU. It is a **proof of concept** demonstrating hybrid GPU acceleration for Yespower — not intended for production mining.
+
 Hybrid CPU+GPU miner for **Whive** (Yespower algorithm — YESPOWER_1.0, N=2048, r=32).
 
 **Architecture:** The GPU handles the memory-intensive `smix` phase (S-init + blockmix + pwxform), while the CPU manages SHA256, PBKDF2, HMAC, and Stratum networking. This design avoids GPU SHA256 bugs common on AMD hardware.
