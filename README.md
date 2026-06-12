@@ -98,8 +98,9 @@ The GPU kernel (`yespower_smix.cl`) runs the memory-hard Salsa20/8 blockmix + pw
 
 | File | Description |
 |------|-------------|
-| `gpu_miner.c` | Main miner (Stratum + CPU logic + GPU orchestration) |
-| `yespower_smix.cl` | OpenCL kernel (S-init + blockmix + pwxform) |
+| `gpu_miner.c` | Hybrid CPU+GPU miner (BATCH=64, Stratum + CPU PBKDF2/HMAC) |
+| `gpu_miner_full.c` | **Optimized fork** — larger batch (BATCH=224, local WG=64) |
+| `yespower_smix.cl` | OpenCL smix kernel (used by both versions) |
 | `test_hybrid_full.c` | Verifies GPU kernel matches CPU reference |
 | `opencl_test_yespower.c` | Debug/test utility |
 
