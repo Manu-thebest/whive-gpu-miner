@@ -1,0 +1,26 @@
+# Binaries
+gpu_miner
+gpu_miner_dbg
+gpu_miner_old
+test_hybrid_full
+opencl_test_yespower
+
+# Objects
+*.o
+*.a
+
+# OpenCL cache
+.cl_cache/
+/home/iastorm/.cache/pocl/
+
+# Core dumps
+core
+core.*
+
+# Logs
+*.log
+
+# Misc
+*.swp
+*.swo
+*.bak
